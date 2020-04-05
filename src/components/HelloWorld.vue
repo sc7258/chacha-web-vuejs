@@ -35,6 +35,9 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  created(){
+    console.log(this.$_.isEmpty()? 'lodash everywhere' : 'uh oh..')
   }
 }
 </script>
