@@ -10,7 +10,10 @@
 <!--    <div>{{lunar2Solar(1971,12,11)}}</div>-->
     <div>{{getCanChi(1972,1,26,10)}}</div>
     <div>{{getCanChiLunar(1971,12,11,10)}}</div>
-    <div>{{getChaCha(1972,1,26,10)}}</div>
+    <hr>
+<!--    <div>{{getChaCha(1972,1,26,10)}}</div>-->
+    <hr>
+    <div>{{getChaCha(1983,10,31,10)}}</div>
 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>

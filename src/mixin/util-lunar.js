@@ -7,11 +7,15 @@ var CHI = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉",
 export default {
     methods: {
         solar2Lunar(y, m, d) {
-            var [dd, mm, yyyy, leap] = cc.solar2Lunar(d, m, y, 9);
+            //var [dd, mm, yyyy, leap] = cc.solar2Lunar(d, m, y, 9);
+            //var [dd, mm, yyyy, leap] = cc.solar2Lunar(d, m, y, -3);
+            var [dd, mm, yyyy, leap] = cc.solar2Lunar(d, m, y, 21);
             return {"year": yyyy, "month": mm, "day": dd, "leap": leap}
         },
         lunar2Solar(y, m, d) {
-            var [dd, mm, yyyy] = cc.lunar2Solar(d, m, y);
+            //var [dd, mm, yyyy] = cc.lunar2Solar(d, m, y, 9);
+            //var [dd, mm, yyyy] = cc.lunar2Solar(d, m, y, -3);
+            var [dd, mm, yyyy] = cc.lunar2Solar(d, m, y, 21);
             return {"year": yyyy, "month": mm, "day": dd}
         },
         getCanChi(y, m, d, t) {
